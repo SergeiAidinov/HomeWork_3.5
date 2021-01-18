@@ -46,6 +46,7 @@ public class MainClass {
 				getCarsInTunnel().getAndDecrement();
 			}
 		}
+
 		if (getCarsInTunnel().intValue() > (MainClass.CARS_COUNT / 2) || (getCarsInTunnel().intValue() < 0)) {
 			throw new TunnelOverLoad(getCarsInTunnel().intValue());
 		}
